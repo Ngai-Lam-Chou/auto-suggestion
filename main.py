@@ -1,6 +1,7 @@
 import keyboard
 from trie import Trie, TrieNode
-
+import re
+PATTERN = r"heat\((\w*)\)"
 with open("alphabet_words.txt", "r") as file:
     # Convert file content to lowercase
     FILE_CONTENT = list(map(lambda word: word.strip().lower(), file.readlines()))
@@ -27,6 +28,16 @@ if __name__ == "__main__":
                 input_str += " "
 
             elif key == "enter":
+                if re.match(PATTERN, input_str.strip()):
+                    prefix = re.search(PATTERN, input_str).group(1)
+                    
+                    top_n_heat_words = trie.find_top_n_highest_heat_words_with_prefix(prefix)
+                    
+                    print("\nTop Heated Words:")
+                    print("\n".join(f"{word}: {heat}" for heat, word in top_n_heat_words))
+                    
+                    input_str = ""  # Clear input for next round
+                    continue
                 if not input_str:
                     print("\nPlease Enter A Word")
                     continue
@@ -60,6 +71,7 @@ if __name__ == "__main__":
                     index = (index + 1) % len(suggestions)  # Cycle through suggestions
                 else:
                     print("\nNo Suggestions")
-
+            elif key == "esc":
+                input_str = ""
             # Display current input string
             print(f"\r{' ' * 80}\rCurrent input: {input_str}", end='')
