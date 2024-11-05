@@ -9,10 +9,15 @@ app = Flask(__name__)
 CORS(app)
 
 # Database Configuration
+<<<<<<< HEAD
 DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///trie_search.db')
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+=======
+basedir = os.path.abspath(os.path.dirname(__file__))
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'trie_search.db')
+>>>>>>> 36d33db646f4e5b96ad366c01ba4e007d82eb464
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
