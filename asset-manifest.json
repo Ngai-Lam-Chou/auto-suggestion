@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tony-nlc/auto-suggestion/static/css/main.54f3264f.css",
+    "main.js": "/tony-nlc/auto-suggestion/static/js/main.2b68c790.js",
+    "static/js/453.8ab44547.chunk.js": "/tony-nlc/auto-suggestion/static/js/453.8ab44547.chunk.js",
+    "index.html": "/tony-nlc/auto-suggestion/index.html",
+    "main.54f3264f.css.map": "/tony-nlc/auto-suggestion/static/css/main.54f3264f.css.map",
+    "main.2b68c790.js.map": "/tony-nlc/auto-suggestion/static/js/main.2b68c790.js.map",
+    "453.8ab44547.chunk.js.map": "/tony-nlc/auto-suggestion/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54f3264f.css",
+    "static/js/main.2b68c790.js"
+  ]
+}
