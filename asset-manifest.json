@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tony-nlc/auto-suggestion/static/css/main.c68d2f61.css",
-    "main.js": "/tony-nlc/auto-suggestion/static/js/main.b1478738.js",
-    "static/js/453.8ab44547.chunk.js": "/tony-nlc/auto-suggestion/static/js/453.8ab44547.chunk.js",
-    "index.html": "/tony-nlc/auto-suggestion/index.html",
-    "main.c68d2f61.css.map": "/tony-nlc/auto-suggestion/static/css/main.c68d2f61.css.map",
-    "main.b1478738.js.map": "/tony-nlc/auto-suggestion/static/js/main.b1478738.js.map",
-    "453.8ab44547.chunk.js.map": "/tony-nlc/auto-suggestion/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/auto-suggestion/static/css/main.c68d2f61.css",
+    "main.js": "/auto-suggestion/static/js/main.56df49b1.js",
+    "static/js/453.8ab44547.chunk.js": "/auto-suggestion/static/js/453.8ab44547.chunk.js",
+    "index.html": "/auto-suggestion/index.html",
+    "main.c68d2f61.css.map": "/auto-suggestion/static/css/main.c68d2f61.css.map",
+    "main.56df49b1.js.map": "/auto-suggestion/static/js/main.56df49b1.js.map",
+    "453.8ab44547.chunk.js.map": "/auto-suggestion/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c68d2f61.css",
-    "static/js/main.b1478738.js"
+    "static/js/main.56df49b1.js"
   ]
 }
